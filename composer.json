@@ -1,24 +1,32 @@
 {
-    "name": "esemve/hook",
-    "description": "Simple hook engine for Laravel 5.*, 6.*",
+    "name": "ahmetertem/hook",
+    "description": "Simple hook engine for Laravel",
     "type": "library",
-    "keywords": ["Hook","Laravel"],
+    "keywords": [
+        "Hook",
+        "Laravel"
+    ],
     "license": "MIT",
     "authors": [
         {
             "name": "Bence Kádár",
             "email": "esemve@gmail.com",
-			"role": "Developer"
+            "role": "Developer"
+        },
+        {
+            "name": "Ahmet Ertem",
+            "email": "amadertem@gmail.com",
+            "role": "Maintainer"
         }
     ],
     "minimum-stability": "dev",
-	"require": {
-		"php": ">=5.6",
-		"laravel/framework": "5.* || 6.* || 7.* || 8.* || 9.*"
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": "5.* || 6.* || 7.* || 8.* || 9.*"
     },
     "autoload": {
-		"psr-4": {
-			"Esemve\\Hook\\": "src/"
-		}
-	}
+        "psr-4": {
+            "Esemve\\Hook\\": "src/"
+        }
+    }
 }
