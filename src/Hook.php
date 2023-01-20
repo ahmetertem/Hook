@@ -1,6 +1,6 @@
 <?php
 
-namespace Esemve\Hook;
+namespace AhmetErtem\Hook;
 
 use Illuminate\Support\Arr;
 
@@ -154,7 +154,7 @@ class Hook
      * @param callable $callback function
      * @param array    $params   parameters
      *
-     * @return \Esemve\Hook\Callback
+     * @return \AhmetErtem\Hook\Callback
      */
     protected function createCallbackObject($callback, $params)
     {
@@ -166,7 +166,7 @@ class Hook
      *
      * @param string                $hook     Hook name
      * @param array                 $params   Parameters
-     * @param \Esemve\Hook\Callback $callback Callback object
+     * @param \AhmetErtem\Hook\Callback $callback Callback object
      * @param string                $output   html wrapped by hook
      *
      * @return mixed

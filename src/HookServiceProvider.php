@@ -1,6 +1,6 @@
 <?php
 
-namespace Esemve\Hook;
+namespace AhmetErtem\Hook;
 
 use Blade;
 use Illuminate\Support\ServiceProvider;
@@ -15,7 +15,7 @@ class HookServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands([
-            \Esemve\Hook\Console\HookListeners::class,
+            \AhmetErtem\Hook\Console\HookListeners::class,
         ]);
 
         $this->app->singleton('Hook', function () {

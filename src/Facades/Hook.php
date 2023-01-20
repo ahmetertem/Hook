@@ -1,6 +1,6 @@
 <?php
 
-namespace Esemve\Hook\Facades;
+namespace AhmetErtem\Hook\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
