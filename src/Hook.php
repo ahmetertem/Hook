@@ -32,10 +32,29 @@ class Hook
 
         $output = $this->run($hook, $params, $callbackObject, $htmlContent);
 
-        if (!$output) {
+        if ($hook == 'vardminModuleBeforeDelete') {
+            // dd($output, $params, $callbackObject);
+        }
+        // if($hook == 'vardminModuleBeforeDelete') {
+        //     dd($this->watch);
+        //     dd($output);
+        // }
+        // template.
+        // if (!$output) {
+        // if ($hook == 'vardminModuleListQuery') {
+        //     dd($output);
+        // }
+        $output1 = $output;
+        if ($output === '') {
+            // if ($hook == 'vardminModuleBeforeDelete') {
+            //     dd($output);
+            // }
             $output = $callbackObject->call();
         }
-
+        if ($hook == 'vardminModuleListQuery') {
+            //     dd($this->watch);
+            // dd($output1, $output);
+        }
         unset($callbackObject);
 
         return $output;
