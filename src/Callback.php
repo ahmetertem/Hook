@@ -28,6 +28,11 @@ class Callback
         }
     }
 
+    public function getParameters()
+    {
+        return $this->parameters;
+    }
+
     public function reset()
     {
         $this->run = true;
